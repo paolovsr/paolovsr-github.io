@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Personal webpage Paolo Visieri</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <style>
+body {
+background-color:#F5F5F5;
+}
+
+.flashcard {
+	border-radius: 25px;
+	background-color:#FFFFFF;
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.grid-container{
+	display:grid;
+	grid-template-columns: 200px 400px;
+	grid-template-rows: 120px 40px;
+	justify-content: center;
+	align-content: center;
+	background-image:url(yellow_background.jpg);
+	background-size: cover;
+	border-radius: 25px 25px 0px 0px;
+}
+.grid-container > div {
+  /*border: 1px solid black;*/
+  text-align:center;
+}
+
+.white_button{
+	color:black;
+	border: 1px solid white;
+	background-color: white;
+	border-radius: 25px;
+	
+}
+.white_button:hover {
+  background-color:#fcdf03; /* Yellow */
+  color: white;
+  border: 1px solid white;
+  
+}
+
+.profile-img{
+	grid-row-start:1;
+	grid-row-end: 3;
+}
+
+.name{
+	grid-column: 2 / 3;
+	grid-row: 1 / 2; /*	grid-row-start:1;	grid-row-end: 3;*/
+}
+
+.linkedin-btn{
+	grid-row-start:2;
+	grid-row-end:3;
+	grid-column-start:2;
+	grid-column-end: 3;
+}
+
+
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+<div class="flashcard">
+	<div class="grid-container">
+		<div class="profile-img"><img src="profile.png" width="200px"></div>
+		<div class="name"><h1>Paolo Visieri</h1><h3> SW Developer</h3></div>
+		<div class="linkedin-btn"><button class="white_button">LinkedIn</button></div>
+	</div>
+	
+	<div class="description">
+		<h2>About Me:</h2>
+		<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum quam odio, quis placerat ante luctus eu. Sed aliquet dolor id sapien rutrum, id vulputate quam iaculis. Suspendisse consectetur mi id libero fringilla, in pharetra sem ullamcorper.</p>
+	</div>
+</div>
+
+
+<div class="col-md-4 col-md-offset-4">
+
+
+</div>
+
+</body>
+</html>
